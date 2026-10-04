@@ -1,17 +1,17 @@
 import Head from "next/head";
 import Layout from "../../components/layout";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import Link from "next/link";
 
 function C() {
+    const router = useRouter()
 
-    if (typeof window !== 'undefined') {
-        const router = useRouter()
-
-        if (router.query.from != 'B') {
+    useEffect(() => {
+        if (router.isReady && router.query.from != 'B') {
             router.push('/NextjsAPI/B')
         }
-    }
+    }, [router])
 
     return (
         <Layout>

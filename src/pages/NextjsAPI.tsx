@@ -125,7 +125,7 @@ export default function handler(req, res) {
                     <p>req.cookies - An object containing the cookies sent by the Request<br />
                         意思是說，如果我們在API中使用req.cookies，就可以取得cookie的值。
                     </p>
-                    <p>req.query - An object containing the request's query string<br />
+                    <p>req.query - An object containing the request&apos;s query string<br />
                         意思是說，如果我們在API中使用req.query，就可以取得query string的值。
                     </p>
                     <p>req.body - An object containing the body parsed by body-parser (if installed)<br />

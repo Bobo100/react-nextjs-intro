@@ -46,12 +46,12 @@ npx create-next-app@latest --typescript`}
                 </CommonPrism>
                 <p>當你使用指令的時候，會問你一些問題如下：</p>
                 <ul>
-                    <li>"What is your project named?" 是詢問專案名稱。</li>
-                    <li className="change_color">"Would you like to use TypeScript with this project?" 是詢問是否要使用 TypeScript</li>
-                    <li>"Would you like to use ESLint with this project?" 是詢問是否要使用 ESLint （程式碼檢查工具）。</li>
-                    <li>"Would you like to use src/ directory with this project?" 是詢問是否要將專案中的源代碼放在 src/ 目錄下（而非根目錄）。</li>
-                    <li>"Would you like to use experimental app/ directory with this project?" 是詢問是否要使用實驗性的 app/ 目錄來組織應用程序代碼。</li>
-                    <li>"What import alias would you like configured?" 是詢問要配置哪個導入別名，例如 @/components、@/utils 等等</li>
+                    <li>&quot;What is your project named?&quot; 是詢問專案名稱。</li>
+                    <li className="change_color">&quot;Would you like to use TypeScript with this project?&quot; 是詢問是否要使用 TypeScript</li>
+                    <li>&quot;Would you like to use ESLint with this project?&quot; 是詢問是否要使用 ESLint （程式碼檢查工具）。</li>
+                    <li>&quot;Would you like to use src/ directory with this project?&quot; 是詢問是否要將專案中的源代碼放在 src/ 目錄下（而非根目錄）。</li>
+                    <li>&quot;Would you like to use experimental app/ directory with this project?&quot; 是詢問是否要使用實驗性的 app/ 目錄來組織應用程序代碼。</li>
+                    <li>&quot;What import alias would you like configured?&quot; 是詢問要配置哪個導入別名，例如 @/components、@/utils 等等</li>
                 </ul>
 
                 <p>那你可以全部都使用預設，那就是直接Enter到底，就恭喜你，你已經建立好一個Next.js專案了</p>
