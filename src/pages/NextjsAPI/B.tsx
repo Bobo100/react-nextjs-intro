@@ -9,7 +9,7 @@ function B() {
 
     useEffect(() => {
         if (router.isReady && router.query.from != 'A') {
-            router.push('/NextjsAPI/A')
+            router.replace('/NextjsAPI/A')
         }
     }, [router])
     
