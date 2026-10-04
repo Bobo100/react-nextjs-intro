@@ -14,7 +14,8 @@ module.exports = {
       },
     ],
     contentSecurityPolicy: ``,
+    // Next 16 只允許 qualities 裡的值，其他會被改成最接近的;圖片頁示範 quality={1}
+    qualities: [1, 75],
   },
-  output: "export",
   // basePath: '/docs',
 };

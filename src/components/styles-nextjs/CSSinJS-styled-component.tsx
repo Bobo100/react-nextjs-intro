@@ -2,11 +2,11 @@ import { useState } from 'react';
 import styled from 'styled-components';
 
 interface ButtonProps {
-    bgColor: string;
+    $bgColor: string;
 }
 
 const Button = styled.button<ButtonProps>`
-  background-color: ${({ bgColor }) => bgColor};
+  background-color: ${({ $bgColor }) => $bgColor};
 `;
 
 function CssinJs3() {
@@ -18,7 +18,7 @@ function CssinJs3() {
     }
 
     return (
-        <Button onClick={handleClick} bgColor={bgColor}>
+        <Button onClick={handleClick} $bgColor={bgColor}>
             Click me
         </Button>
     );

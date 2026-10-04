@@ -125,7 +125,7 @@ export default function handler(req, res) {
                     <p>req.cookies - An object containing the cookies sent by the Request<br />
                         意思是說，如果我們在API中使用req.cookies，就可以取得cookie的值。
                     </p>
-                    <p>req.query - An object containing the request's query string<br />
+                    <p>req.query - An object containing the request&apos;s query string<br />
                         意思是說，如果我們在API中使用req.query，就可以取得query string的值。
                     </p>
                     <p>req.body - An object containing the body parsed by body-parser (if installed)<br />
@@ -281,14 +281,18 @@ export default A`}
 import Head from "next/head";
 import Layout from "../../components/layout";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import Link from "next/link";
 
 function B() {
     const router = useRouter()
 
-    if (router.query.from != 'A') {
-        router.push('/NextjsAPI/A')
-    }
+    // 靜態頁面 hydration 當下 query 還是空的，要等 isReady 才能判斷
+    useEffect(() => {
+        if (router.isReady && router.query.from != 'A') {
+            router.replace('/NextjsAPI/A')
+        }
+    }, [router])
 
     return (
         <Layout>
